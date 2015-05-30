@@ -6,7 +6,7 @@
 "ruby::rbenv::plugins":
   "ruby-build":
     "ensure": "v20150506"
-    "source": "sstephenson/ruby-build
+    "source": "sstephenson/ruby-build"
   "rbenv-gem-rehash":
     "ensure": "v1.0.0"
     "source": "sstephenson/rbenv-gem-rehash"
