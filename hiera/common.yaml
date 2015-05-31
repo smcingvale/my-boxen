@@ -1,5 +1,7 @@
 ---
 # See https://github.com/boxen/puppet-ruby for docs
+"ruby::global::version": "2.2.2"
+
 "ruby::provider": "rbenv"
 "ruby::rbenv::ensure": "v0.4.0"
 
@@ -10,5 +12,3 @@
   "rbenv-gem-rehash":
     "ensure": "v1.0.0"
     "source": "sstephenson/rbenv-gem-rehash"
-
-"ruby::global::version": "2.2.2"
