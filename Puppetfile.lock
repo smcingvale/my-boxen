@@ -29,6 +29,11 @@ GITHUBTARBALL
     openssl (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (2.8.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
   specs:
     pkgconfig (1.0.0)
@@ -77,6 +82,7 @@ DEPENDENCIES
   inifile (= 1.1.1)
   module_data (= 0.0.3)
   openssl (= 1.0.0)
+  osx (= 2.8.0)
   pkgconfig (= 1.0.0)
   repository (= 2.4.1)
   ruby (= 8.5.2)
