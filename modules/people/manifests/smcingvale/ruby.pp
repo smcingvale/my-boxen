@@ -11,4 +11,19 @@ class people::smcingvale::ruby {
     version      => '~> 1.0',
     ruby_version => '*',
   }
+  ruby_gem { 'elasticsearch for all rubies':
+    gem          => 'elasticsearch',
+    version      => '~> 1.0.6',
+    ruby_version => '*',
+  }
+  ruby_gem { 'hashie for all rubies':
+    gem          => 'hashie',
+    version      => '~> 3.4.1',
+    ruby_version => '*',
+  }
+  ruby_gem { 'jbuilder for all rubies':
+    gem          => 'jbuilder',
+    version      => '~> 2.2.16',
+    ruby_version => '*',
+  }
 }
