@@ -1,4 +1,8 @@
 ---
 # Set homebrew to install to /usr/local so it resembles 
 # a normal homebrew install.
+#
+# This has to be done via an external fact (rather than 
+# hiera) because of how Puppet's custom resource providers
+# work.
 homebrew_root: /usr/local
