@@ -21,6 +21,11 @@ class people::smcingvale::ruby {
     version      => '~> 3.4.1',
     ruby_version => '*',
   }
+  ruby_gem { 'httparty for all rubies':
+    gem          => 'httparty',
+    version      => '~> 0.13.5',
+    ruby_version => '*',
+  }
   ruby_gem { 'jbuilder for all rubies':
     gem          => 'jbuilder',
     version      => '~> 2.2.16',
