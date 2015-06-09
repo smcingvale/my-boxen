@@ -7,4 +7,11 @@
 #
 class people::smcingvale::apps {
   include brewcask
+
+  package { [
+    'omnifocus',
+  ]:
+    ensure   => present,
+    provider => 'brewcask',
+  }
 }
