@@ -7,8 +7,16 @@
 # "machine-configuration" rather than an actively developed
 # project.  Therefore, I configure them here.
 class people::smcingvale::dotfiles {
-  repository { "${::boxen_srcdir}/dotfiles":
+  $dotfiles_dir = "${::boxen_srcdir}/dotfiles"
+
+  repository { $dotfiles_dir:
     ensure => 'origin/HEAD',
     source => "${::github_login}/dotfiles",
+  }
+
+  exec { "install dotfiles":
+    cwd     => $dotfiles_dir,
+    command => "./bin/bootstrap.rb",
+    require => Repository[$dotfiles_dir]
   }
 }
