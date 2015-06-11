@@ -1,5 +1,5 @@
 ---
-# See https://github.com/boxen/puppet-ruby for docs
+# See https://github.com/boxen/puppet-ruby for docs.
 "ruby::global::version": "2.2.2"
 
 "ruby::provider": "rbenv"
@@ -12,3 +12,6 @@
   "rbenv-gem-rehash":
     "ensure": "v1.0.0"
     "source": "sstephenson/rbenv-gem-rehash"
+
+# See https://github.com/boxen/puppet-git for docs.
+"git::global_excludesfile": "~/gitignore_global"

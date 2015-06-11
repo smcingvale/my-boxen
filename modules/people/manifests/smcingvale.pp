@@ -4,6 +4,8 @@
 #
 class people::smcingvale {
   include people::smcingvale::apps
-  include people::smcingvale::ruby
   include people::smcingvale::osx
+  include people::smcingvale::dotfiles
+  include people::smcingvale::ruby
+  include people::smcingvale::git
 }
