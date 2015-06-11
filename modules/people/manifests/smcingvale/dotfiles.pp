@@ -7,6 +7,7 @@
 # "machine-configuration" rather than an actively developed
 # project.  Therefore, I configure them here.
 class people::smcingvale::dotfiles {
+  $home         = "/Users/${::boxen_user}"
   $dotfiles_dir = "${::boxen_srcdir}/dotfiles"
 
   repository { $dotfiles_dir:
@@ -14,9 +15,9 @@ class people::smcingvale::dotfiles {
     source => "${::github_login}/dotfiles",
   }
 
-  exec { "install dotfiles":
-    cwd     => $dotfiles_dir,
-    command => "./bin/bootstrap.rb",
-    require => Repository[$dotfiles_dir]
+  file { "${home}/.gitignore_global":
+    ensure  => link,
+    target  => "${dotfiles_dir}/git/gitignore_global.symlink",
+    require => Repository[$dotfiles_dir],
   }
 }
