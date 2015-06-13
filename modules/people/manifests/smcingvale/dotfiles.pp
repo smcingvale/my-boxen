@@ -15,6 +15,12 @@ class people::smcingvale::dotfiles {
     source => "${::github_login}/dotfiles",
   }
 
+  file { "${home}/.bash_profile":
+    ensure  => link,
+    target  => "${dotfiles_dir}/bash/bash_profile.symlink",
+    require => Repository[$dotfiles_dir],
+  }
+
   file { "${home}/.gitignore_global":
     ensure  => link,
     target  => "${dotfiles_dir}/git/gitignore_global.symlink",
