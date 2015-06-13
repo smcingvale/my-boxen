@@ -4,5 +4,6 @@
 # See https://github.com/boxen/puppet-osx for docs.
 #
 class people::smcingvale::osx {
+  # map capslock to control
   include osx::keyboard::capslock_to_control
 }
