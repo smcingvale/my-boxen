@@ -9,5 +9,6 @@ class people::smcingvale::osx {
 
   # dock settings
   include osx::dock::autohide
+  include osx::dock::clear_dock
   include osx::dock::dim_hidden_apps
 }
