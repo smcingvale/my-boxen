@@ -6,4 +6,8 @@
 class people::smcingvale::osx {
   # map capslock to control
   include osx::keyboard::capslock_to_control
+
+  # dock settings
+  include osx::dock::autohide
+  include osx::dock::dim_hidden_apps
 }
