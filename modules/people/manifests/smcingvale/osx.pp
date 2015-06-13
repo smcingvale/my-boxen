@@ -4,8 +4,10 @@
 # See https://github.com/boxen/puppet-osx for docs.
 #
 class people::smcingvale::osx {
-  # map capslock to control
+  # misc settings
   include osx::keyboard::capslock_to_control
+  include osx::disable_app_quarantine
+  include osx::no_network_dsstores
 
   # dock settings
   include osx::dock::autohide
