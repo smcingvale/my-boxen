@@ -26,4 +26,16 @@ class people::smcingvale::dotfiles {
     target  => "${dotfiles_dir}/git/gitignore_global.symlink",
     require => Repository[$dotfiles_dir],
   }
+
+  file { "${home}/.vimrc":
+    ensure  => link,
+    target  => "${dotfiles_dir}/git/vimrc.symlink",
+    require => Repository[$dotfiles_dir],
+  }
+
+  file { "${home}/.gvimrc":
+    ensure  => link,
+    target  => "${dotfiles_dir}/vim/gvimrc.symlink",
+    require => Repository[$dotfiles_dir],
+  }
 }
