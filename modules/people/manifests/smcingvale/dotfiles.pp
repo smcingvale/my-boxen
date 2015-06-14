@@ -29,7 +29,7 @@ class people::smcingvale::dotfiles {
 
   file { "${home}/.vimrc":
     ensure  => link,
-    target  => "${dotfiles_dir}/git/vimrc.symlink",
+    target  => "${dotfiles_dir}/vim/vimrc.symlink",
     require => Repository[$dotfiles_dir],
   }
 
