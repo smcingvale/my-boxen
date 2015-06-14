@@ -14,4 +14,11 @@ class people::smcingvale::osx {
   include osx::dock::clear_dock
   include osx::dock::dim_hidden_apps
   include osx::dock::hide_indicator_lights
+
+  # hot corners
+  class { 'osx::dock::hot_corners':
+    top_right    => "Desktop",
+    bottom_right => "Launchpad",
+    bottom_left  => "Put Display to Sleep",
+  }
 }
