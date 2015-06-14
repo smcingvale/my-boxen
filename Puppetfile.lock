@@ -24,6 +24,11 @@ GITHUBTARBALL
     homebrew (1.12.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-iterm2
+  specs:
+    iterm2 (1.2.5)
+
+GITHUBTARBALL
   remote: boxen/puppet-openssl
   specs:
     openssl (1.0.0)
@@ -80,6 +85,7 @@ DEPENDENCIES
   git (= 2.7.9)
   homebrew (= 1.12.0)
   inifile (= 1.1.1)
+  iterm2 (= 1.2.5)
   module_data (= 0.0.3)
   openssl (= 1.0.0)
   osx (= 2.8.0)
