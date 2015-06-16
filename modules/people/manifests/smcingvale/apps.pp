@@ -7,6 +7,7 @@
 #
 class people::smcingvale::apps {
   include brewcask
+  include intellij
   include iterm2::stable
   include iterm2::colors::solarized_dark
   include notational_velocity::nvalt

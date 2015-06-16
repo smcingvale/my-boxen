@@ -54,6 +54,7 @@ github "osx",		      "2.8.0"
 github "iterm2",	      "1.2.5"
 github "notational_velocity", "1.1.2"
 github "java",                "1.8.3"
+github "intellij",            "1.5.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
