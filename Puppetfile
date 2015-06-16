@@ -53,6 +53,7 @@ github "xquartz",	      "1.2.1"
 github "osx",		      "2.8.0"
 github "iterm2",	      "1.2.5"
 github "notational_velocity", "1.1.2"
+github "java",                "1.8.3"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
