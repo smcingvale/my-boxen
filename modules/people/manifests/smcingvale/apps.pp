@@ -12,6 +12,12 @@ class people::smcingvale::apps {
   include notational_velocity::nvalt
 
   package { [
+    'gradle'
+  ]:
+    ensure => present,
+  }
+
+  package { [
     'omnifocus',
     'intellij-idea',
   ]:
