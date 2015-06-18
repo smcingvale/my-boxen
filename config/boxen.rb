@@ -5,7 +5,7 @@
 # ENV['BOXEN_HOME'] = '/opt/boxen'
 
 # Change the repo boxen will use.
-# ENV['BOXEN_REPO_NAME'] = 'boxen/our-boxen'
+ENV['BOXEN_REPO_NAME'] = 'smcingvale/my-boxen'
 
 # Boxen binary packaging
 # ENV["BOXEN_S3_ACCESS_KEY"] = ''
@@ -19,7 +19,7 @@
 # ENV["BOXEN_WEB_HOOK_URL"] = 'https://some-uri.com/boxen'
 #
 # required for Github Enterprise
-# ENV["BOXEN_GITHUB_ENTERPRISE_URL"] = 'https://github.yourdomain.com'
+ENV["BOXEN_GITHUB_ENTERPRISE_URL"] = 'https://github.apexclearing.local'
 
 # required for Github Enterprise (defaults to "https://github.com/%s")
-# ENV['BOXEN_REPO_URL_TEMPLATE'] = 'https://github.yourdomain.com/%s'
+ENV['BOXEN_REPO_URL_TEMPLATE'] = 'https://github.apexclearing.local/%s'
