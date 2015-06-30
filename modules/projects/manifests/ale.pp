@@ -3,7 +3,6 @@ class projects::ale {
   $ale_dir = "${::boxen_srcdir}/apex-public/ale"
 
   repository { $ale_dir :
-    ensure => 'origin/HEAD',
     source => 'http://github.apexclearing.local/apex-public/ale.git',
   }
 

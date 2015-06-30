@@ -3,7 +3,6 @@ class projects::legit {
   $legit_dir = "${::boxen_srcdir}/apex-public/legit"
 
   repository { $legit_dir :
-    ensure => 'origin/HEAD',
     source => 'http://github.apexclearing.local/apex-public/legit.git',
   }
 

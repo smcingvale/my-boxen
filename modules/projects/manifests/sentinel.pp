@@ -3,7 +3,6 @@ class projects::sentinel {
   $sentinel_dir = "${::boxen_srcdir}/apex-public/sentinel"
 
   repository { $sentinel_dir :
-    ensure => 'origin/HEAD',
     source => 'http://github.apexclearing.local/apex-public/sentinel.git',
   }
 

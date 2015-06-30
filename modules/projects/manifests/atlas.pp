@@ -3,7 +3,6 @@ class projects::atlas {
   $atlas_dir = "${::boxen_srcdir}/apex-public/atlas"
 
   repository { $atlas_dir :
-    ensure => 'origin/HEAD',
     source => 'http://github.apexclearing.local/apex-public/atlas.git',
   }
 
