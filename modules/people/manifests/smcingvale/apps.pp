@@ -12,7 +12,8 @@ class people::smcingvale::apps {
   include notational_velocity::nvalt
 
   package { [
-    'gradle'
+    'gradle',
+    'htop-osx',
   ]:
     ensure => present,
   }
