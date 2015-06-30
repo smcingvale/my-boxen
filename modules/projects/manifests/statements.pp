@@ -3,7 +3,7 @@ class projects::statements {
   $statements_dir = "${::boxen_srcdir}/smcingvale/statements"
 
   repository { $statements_dir :
-    source => 'http://github.apexclearing.local/apex-public/atlas.git',
+    source => 'http://github.apexclearing.local/smcingvale/statements.git',
   }
 
   git::config::local { $statements_dir :
