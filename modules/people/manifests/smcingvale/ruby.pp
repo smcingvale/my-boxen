@@ -36,4 +36,9 @@ class people::smcingvale::ruby {
     version      => '~> 4.2.4',
     ruby_version => '*',
   }
+  ruby_gem { 'pg rails for all rubies':
+    gem          => 'pg',
+    version      => '~> 0.18.3',
+    ruby_version => '*',
+  }
 }
