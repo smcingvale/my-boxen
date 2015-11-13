@@ -31,4 +31,9 @@ class people::smcingvale::ruby {
     version      => '~> 2.2.16',
     ruby_version => '*',
   }
+  ruby_gem { 'rails for all rubies':
+    gem          => 'rails',
+    version      => '~> 4.2.4',
+    ruby_version => '*',
+  }
 }
