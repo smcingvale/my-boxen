@@ -5,6 +5,7 @@
 class people::smcingvale {
   include java
   include python
+  include heroku
 
   include people::smcingvale::apps
   include people::smcingvale::osx
